@@ -1,4 +1,4 @@
-# LC-Finder
+# Lamina Cribosa - OCT - Finder
 
 **LC-Finder** is a point-and-click utility that scans your OCT **TIFF stacks**, finds every slice containing **Lamina Cribrosa (LC)**, and re-assembles those slices into new “LC-only” stacks—no coding required.
 
