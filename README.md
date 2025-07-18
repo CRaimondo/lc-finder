@@ -66,8 +66,8 @@ Output – click Browse… and select / create a folder for results (e.g. lc-fin
 Progress messages stream in the console pane, and new files named
 originalStack_LC_only.tif appear in the output folder.
 
-
-### 🔧  Command-Line (Optional if GUI set up isnt working)
+---
+## Command-Line (Optional if GUI set up isnt working)
 
 #### batch-process every .tif in inputs/ once
 python lc_pipeline.py --in inputs --out reassembled_outputs --conf 0.90
