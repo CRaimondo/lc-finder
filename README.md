@@ -26,10 +26,13 @@ lc-finder/
 ## 🖥️  1-Time Setup (macOS & Windows)
 
 1. **Install Python 3.10+**  
-   *macOS:* <https://www.python.org/downloads/> or Conda.  
+   *macOS:* <https://www.python.org/downloads/> or Conda.
+If need conda:
+conda env create -f environment.yml     # sets up python 3.10 + all libs
+conda activate lc-finder
    *Windows:* Use the “Add Python to PATH” option during install.
 
-2. **Install the required libraries**
+3. **Install the required libraries**
 
    Open *Terminal* (macOS) or *Command Prompt* (Windows) and run:
 
