@@ -32,8 +32,6 @@ lc-finder/
 
 ### 2 Install the dependencies  
 
-<details><summary><strong>Option A – Conda (recommended)</strong></summary>
-
 	```bash
 		conda env create -f environment.yml ## inside lc-finder/
 		conda activate lc-finder
