@@ -18,7 +18,7 @@ from roboflow import Roboflow       # pip install roboflow
 
 # ── Roboflow init (same creds as pipeline) ───────────────
 from roboflow import Roboflow
-RF_API_KEY   = "lq5fV0GkEKF4NWmvbI2n"
+RF_API_KEY   = ## use API key (ask chris for ACORN one)
 RF_WORKSPACE = "your-workspace"    # ← update if needed
 RF_PROJECT   = "lc-stacker"
 RF_VERSION   = "2"
