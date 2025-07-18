@@ -57,7 +57,7 @@ lc-finder/
 │ [ Run ]   [ Exit ]                            │
 │ ───── live log shows progress here ────────── │
 └───────────────────────────────────────────────┘
-
+```
 3.  Choose your folders
 Input  – click Browse… and select the directory that contains your raw .tif files (for example lc-finder/inputs).
 Output – click Browse… and select / create a folder for results (e.g. lc-finder/reassembled_outputs).
