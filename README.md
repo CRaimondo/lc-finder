@@ -32,7 +32,7 @@ If need conda:
    conda env create -f environment.yml 
    conda activate lc-finder
 
-   *Windows:* Use the “Add Python to PATH” option during install.
+ *Windows:* Use the “Add Python to PATH” option during install.
 
 3. **Install the required libraries**
 
