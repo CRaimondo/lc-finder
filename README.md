@@ -22,7 +22,7 @@ lc-finder/
 ├── environment.yml
 ├── inputs/                ← put raw .tif stacks here
 └── reassembled_outputs/   ← LC-only stacks appear here
-
+```
 ---
 
 ## 🖥️  One-Time Setup (macOS • Windows)
