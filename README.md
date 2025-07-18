@@ -30,8 +30,8 @@ lc-finder/
 
 ### 2 Install the dependencies  
 
-	
-	conda env create -f environment.yml ## inside lc-finder/
+	## inside lc-finder/
+	conda env create -f environment.yml 
 	conda activate lc-finder
 
 ### 3 **Install the required libraries**
@@ -39,7 +39,8 @@ lc-finder/
    Open *Terminal* (macOS) or *Command Prompt* (Windows) and run:
 
 
-	pip install PySimpleGUI pillow roboflow
+	pip install pillow roboflow
+ 	pip install --upgrade --extra-index-url https://PySimpleGUI.net/install PySimpleGUI
 
 ### 🚀 Using the GUI (recommended)
 1.	Double-click lc_gui_app.py
