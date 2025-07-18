@@ -64,7 +64,7 @@ lc-finder/
 
 4. Leave “Min LC confidence” at 0.90 unless you want stricter filtering.
 5. Click Run.
-6. 
+   
 Progress messages stream in the console pane, and new files named
 originalStack_LC_only.tif appear in the output folder.
 
