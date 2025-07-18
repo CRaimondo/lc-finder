@@ -1,17 +1,18 @@
-# lc-finder
+# LC-Finder
 
-A point-and-click tool that scans a folder of OCT **TIFF stacks**, finds the slices that show **Lamina Cribrosa (LC)**, and saves new “LC-only” stacks for you.  
-
+**LC-Finder** is a point-and-click utility that scans your OCT **TIFF stacks**, finds every slice containing **Lamina Cribrosa (LC)**, and re-assembles those slices into new “LC-only” stacks—no coding required.
 
 ---
 
-## 📦 What you get
+## 📂 Repository Layout
 
-| File | What it is |
-|------|------------|
-| **`lc_gui_app.py`** | Drag-and-drop window—just pick two folders and click **Run**. |
-| **`lc_pipeline.py`** | Command-line / batch version (optional). |
-| **`environment.yml`** | One-stop installer for all required libraries. |
+| Path | Purpose |
+|------|---------|
+| `lc_gui_app.py` | **Graphical** interface. Double-click, pick folders, press **Run**. |
+| `lc_pipeline.py` | **Command-line** / automated batch runner (optional). |
+| `environment.yml` | One-line Conda installer for every Python library you need. |
+| `inputs/` | Drop raw `.tif` stacks here (folder is ignored by Git). |
+| `reassembled_outputs/` | LC-only stacks are written here. |
 
 Your folders:
 lc-finder/
@@ -23,16 +24,20 @@ lc-finder/
 
 ---
 
-## 🖥️  1-Time Setup (macOS & Windows)
+## 🖥️  One-Time Setup (macOS • Windows)
 
-1. **Install Python 3.10+**  
-   *macOS:* <https://www.python.org/downloads/> or Conda.
-If need conda:
-   ```bash
-   conda env create -f environment.yml 
-   conda activate lc-finder
+### 1 Install Python ≥ 3.10  
+*Mac:* download from <https://www.python.org/downloads/> **or** install Conda.  
+*Windows:* same link; tick **“Add Python to PATH”** during setup.
 
- *Windows:* Use the “Add Python to PATH” option during install.
+### 2 Install the dependencies  
+
+<details><summary><strong>Option A – Conda (recommended)</strong></summary>
+
+```bash
+# inside lc-finder/
+conda env create -f environment.yml
+conda activate lc-finder
 
 3. **Install the required libraries**
 
@@ -46,4 +51,27 @@ If need conda:
   - If your system opens a text editor instead of running it:
       - macOS: right-click → Open With → Python Launcher
   	  - Windows: right-click → Open with → Python
-3.	The LC Stack Processor window appears:
+2.	The LC Stack Processor window appears:
+┌─ LC Stack Processor ──────────────────────────┐
+│ Input folder:   [ Browse… ]                   │
+│ Output folder:  [ Browse… ]                   │
+│ Min LC confidence: 0.90                       │
+│ [ Run ]   [ Exit ]                            │
+│ ───── live log shows progress here ────────── │
+└───────────────────────────────────────────────┘
+3.  Choose your folders
+Input  – click Browse… and select the directory that contains your raw .tif files (for example lc-finder/inputs).
+Output – click Browse… and select / create a folder for results (e.g. lc-finder/reassembled_outputs).
+	4.	Leave “Min LC confidence” at 0.90 unless you want stricter filtering.
+	5.	Click Run.
+Progress messages stream in the console pane, and new files named
+originalStack_LC_only.tif appear in the output folder.
+
+
+🔧  Command-Line (Optional)
+
+# batch-process every .tif in inputs/ once
+python lc_pipeline.py --in inputs --out reassembled_outputs --conf 0.90
+
+# keep watching the inputs/ folder and auto-process new files
+python lc_pipeline.py --in inputs --out reassembled_outputs --conf 0.90 --watch
