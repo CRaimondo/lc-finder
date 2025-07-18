@@ -33,17 +33,17 @@ lc-finder/
 ### 2 Install the dependencies  
 
 	```bash
-		conda env create -f environment.yml ## inside lc-finder/
-		conda activate lc-finder
+	conda env create -f environment.yml ## inside lc-finder/
+	conda activate lc-finder
 
 ### 3 **Install the required libraries**
 
    Open *Terminal* (macOS) or *Command Prompt* (Windows) and run:
 
-   ```bash
-   pip install PySimpleGUI pillow roboflow
+	```bash
+	pip install PySimpleGUI pillow roboflow
 
-## 🚀 Using the GUI (recommended)
+### 🚀 Using the GUI (recommended)
 1.	Double-click lc_gui_app.py
   - If your system opens a text editor instead of running it:
       - macOS: right-click → Open With → Python Launcher
@@ -65,7 +65,7 @@ Progress messages stream in the console pane, and new files named
 originalStack_LC_only.tif appear in the output folder.
 
 
-🔧  Command-Line (Optional)
+### 🔧  Command-Line (Optional)
 
 # batch-process every .tif in inputs/ once
 python lc_pipeline.py --in inputs --out reassembled_outputs --conf 0.90
