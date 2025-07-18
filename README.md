@@ -14,6 +14,7 @@
 | `inputs/` | Drop raw `.tif` stacks here (folder is ignored by Git). |
 | `reassembled_outputs/` | LC-only stacks are written here. |
 
+```text
 Your folders:
 lc-finder/
 ├── lc_gui_app.py
@@ -48,7 +49,7 @@ lc-finder/
       - macOS: right-click → Open With → Python Launcher
   	  - Windows: right-click → Open with → Python
 2.	The LC Stack Processor window appears:
-"""
+```text
 ┌─ LC Stack Processor ──────────────────────────┐
 │ Input folder:   [ Browse… ]                   │
 │ Output folder:  [ Browse… ]                   │
@@ -56,7 +57,7 @@ lc-finder/
 │ [ Run ]   [ Exit ]                            │
 │ ───── live log shows progress here ────────── │
 └───────────────────────────────────────────────┘
-"""
+
 3.  Choose your folders
 Input  – click Browse… and select the directory that contains your raw .tif files (for example lc-finder/inputs).
 Output – click Browse… and select / create a folder for results (e.g. lc-finder/reassembled_outputs).
