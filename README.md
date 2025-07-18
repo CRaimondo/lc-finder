@@ -26,9 +26,7 @@ lc-finder/
 
 ## 🖥️  One-Time Setup (macOS • Windows)
 
-### 1 Install Python ≥ 3.10  
-*Mac:* download from <https://www.python.org/downloads/> **or** install Conda.  
-*Windows:* same link; tick **“Add Python to PATH”** during setup.
+### 1 Install Python ≥ 3.10  (if not already download
 
 ### 2 Install the dependencies  
 
@@ -49,6 +47,7 @@ lc-finder/
       - macOS: right-click → Open With → Python Launcher
   	  - Windows: right-click → Open with → Python
 2.	The LC Stack Processor window appears:
+"""
 ┌─ LC Stack Processor ──────────────────────────┐
 │ Input folder:   [ Browse… ]                   │
 │ Output folder:  [ Browse… ]                   │
@@ -56,6 +55,7 @@ lc-finder/
 │ [ Run ]   [ Exit ]                            │
 │ ───── live log shows progress here ────────── │
 └───────────────────────────────────────────────┘
+"""
 3.  Choose your folders
 Input  – click Browse… and select the directory that contains your raw .tif files (for example lc-finder/inputs).
 Output – click Browse… and select / create a folder for results (e.g. lc-finder/reassembled_outputs).
