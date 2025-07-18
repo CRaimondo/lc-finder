@@ -28,9 +28,8 @@ lc-finder/
 1. **Install Python 3.10+**  
    *macOS:* <https://www.python.org/downloads/> or Conda.
 If need conda:
-   ```bash
-conda env create -f environment.yml     # sets up python 3.10 + all libs
-conda activate lc-finder
+   ```bash conda env create -f environment.yml     # sets up python 3.10 + all libs
+       conda activate lc-finder
 
    *Windows:* Use the “Add Python to PATH” option during install.
 
