@@ -34,10 +34,10 @@ lc-finder/
 
 <details><summary><strong>Option A – Conda (recommended)</strong></summary>
 
-```bash
-# inside lc-finder/
-conda env create -f environment.yml
-conda activate lc-finder
+	```bash
+	# inside lc-finder/
+	conda env create -f environment.yml
+	conda activate lc-finder
 
 3. **Install the required libraries**
 
