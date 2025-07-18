@@ -1,0 +1,14 @@
+# ── environment.yml ───────────────────────────────────
+name: lc-finder          # call it whatever you like
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10
+  - pip                   # so we can install from PyPI
+  - pillow                # TIFF/JPEG handling
+  - watchdog              # only needed if you use --watch in the CLI
+  - pip:
+      - PySimpleGUI
+      - roboflow
+# ──────────────────────────────────────────────────────
