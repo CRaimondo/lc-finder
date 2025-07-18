@@ -72,7 +72,7 @@ originalStack_LC_only.tif appear in the output folder.
 ## Command-Line (Optional if GUI set up isnt working)
 
 #### batch-process every .tif in inputs/ once
-python lc_pipeline.py --in inputs --out reassembled_outputs --conf 0.90
+	python lc_pipeline.py --in inputs --out reassembled_outputs --conf 0.90
 
 ##### keep watching the inputs/ folder and auto-process new files
-python lc_pipeline.py --in inputs --out reassembled_outputs --conf 0.90 --watch
+	python lc_pipeline.py --in inputs --out reassembled_outputs --conf 0.90 --watch
