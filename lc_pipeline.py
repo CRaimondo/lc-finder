@@ -19,7 +19,7 @@ def parse_args():
     return ap.parse_args()
 
 # Roboflow init once
-rf = Roboflow(api_key="lq5fV0GkEKF4NWmvbI2n")
+rf = Roboflow(api_key="")
 model = rf.workspace("your-workspace").project("lc-stacker").version("2").model
 
 ############################
